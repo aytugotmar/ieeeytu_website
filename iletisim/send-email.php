@@ -36,10 +36,10 @@ try {
 
     //Recipients
     $mail->setFrom('ieeeytuiletisim@yandex.com', $_POST["name"] );
-    $mail->addAddress("aytugotmar@ieeeytu.com", "Aytuğ");            //Add a recipient
-    $mail->addAddress("abdulsametcetinkaya@ieeeytu.com", "Abdülsamet");               //Name is optional
+    $mail->addAddress("aytugotmar@ieeeytu.com", "Aytuğ");            //Add a recipient (Name is optional)
+    // $mail->addAddress("abdulsametcetinkaya@ieeeytu.com", "Abdülsamet");               
     $mail->addReplyTo($_POST["email"]);
-    $mail->addCC('csieeeytu@gmail.com');
+    // $mail->addCC('csieeeytu@gmail.com');
     // $mail->addBCC('bcc@example.com');
 
     //Attachments
